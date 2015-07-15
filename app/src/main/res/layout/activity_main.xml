@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
 
-    <cn.xm.weidongjian.progressbutton.ProgressButton
+    <cn.xm.weidongjian.progressbuttonlib.ProgressButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"

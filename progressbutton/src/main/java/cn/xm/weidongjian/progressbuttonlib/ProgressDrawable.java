@@ -1,4 +1,4 @@
-package cn.xm.weidongjian.progressbutton;
+package cn.xm.weidongjian.progressbuttonlib;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

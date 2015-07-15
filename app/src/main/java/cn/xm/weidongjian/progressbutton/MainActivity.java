@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import cn.xm.weidongjian.progressbuttonlib.ProgressButton;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private ProgressButton button;
