@@ -1,0 +1,48 @@
+# AndroidProgressButton
+a button with progress
+
+![image](https://github.com/weidongjian/AndroidProgressButton/raw/master/art/device-2015-07-16-102914.gif)
+
+ **使用方法**
+- 点击[这个链接](https://github.com/weidongjian/AndroidProgressButton/blob/master/art/progressbutton-release.aar?raw=true)下载aar包，添加在libs文件夹里面（如果没有libs就创建一个）
+- 在项目的build.gradle中添加如下代码
+
+```
+dependencies {
+    compile(name:'progressbutton-release', ext:'aar')
+}
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+```
+- 在xml中引用该控件：
+
+```
+<cn.xm.weidongjian.progressbuttonlib.ProgressButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="@drawable/selector_button"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+```
+
+- 在activity中设置各种效果：
+
+```
+private ProgressButton button;
+button = (ProgressButton) findViewById(R.id.button);
+button.startRotate();\\添加并开始旋转progressBar
+button.animError();\\显示错误符号
+button.animFinish();\\显示正确符号
+button.removeDrawable();\\移除progressBar
+```
+
+welcome comment
