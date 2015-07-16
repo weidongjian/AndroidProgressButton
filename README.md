@@ -45,4 +45,7 @@ button.animFinish();\\显示正确符号
 button.removeDrawable();\\移除progressBar
 ```
 
+bugs：
+目前button的layout属性不可以为MatchParent，不然drawable会跑到最左边
+
 welcome comment
