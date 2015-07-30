@@ -9,12 +9,7 @@ a button with progress
 
 ```
 dependencies {
-    compile(name:'progressbutton-release', ext:'aar')
-}
-repositories{
-    flatDir{
-        dirs 'libs'
-    }
+    compile 'cn.weidongjian.android:progress-button:0.2'
 }
 ```
 - 在xml中引用该控件：
