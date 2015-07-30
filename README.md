@@ -4,7 +4,6 @@ a button with progress
 ![image](https://github.com/weidongjian/AndroidProgressButton/raw/master/art/device-2015-07-16-102914.gif)
 
  **使用方法**
-- 点击[这个链接](https://github.com/weidongjian/AndroidProgressButton/blob/master/art/progressbutton-release.aar?raw=true)下载aar包，添加在libs文件夹里面（如果没有libs就创建一个）
 - 在项目的build.gradle中添加如下代码
 
 ```
