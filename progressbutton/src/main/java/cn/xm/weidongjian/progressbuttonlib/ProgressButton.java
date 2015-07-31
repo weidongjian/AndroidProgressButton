@@ -6,7 +6,6 @@ import android.graphics.Canvas;
 import android.graphics.drawable.Animatable;
 import android.os.Build;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.widget.Button;
 
 /**
@@ -14,6 +13,7 @@ import android.widget.Button;
  */
 public class ProgressButton extends Button implements Animatable {
     private ProgressDrawable drawable;
+
     public interface onAnimFinish {
         void onFinish();
     }
@@ -72,12 +72,13 @@ public class ProgressButton extends Button implements Animatable {
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        Log.d("debug", "onDetachedFromWindow");
         drawable.stopRotate();
     }
 
     @Override
-    public void start() {}
+    public void start() {
+        startRotate();
+    }
 
     @Override
     public void stop() {
